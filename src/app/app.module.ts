@@ -6,27 +6,27 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // components
+import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home.component';
 
 // modules
 import { MaterialModule } from './material-module';
-import { FooterComponent } from './footer/footer.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     PageNotFoundComponent,
-    HomeComponent,
     FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
