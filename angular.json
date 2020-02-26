@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "kiskeya-ng": {
+    "kiskeya": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/kiskeya-ng",
+            "outputPath": "dist/kiskeya",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -67,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "kiskeya-ng:build"
+            "browserTarget": "kiskeya:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "kiskeya-ng:build:production"
+              "browserTarget": "kiskeya:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "kiskeya-ng:build"
+            "browserTarget": "kiskeya:build"
           }
         },
         "test": {
@@ -93,6 +94,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -115,15 +117,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "kiskeya-ng:serve"
+            "devServerTarget": "kiskeya:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "kiskeya-ng:serve:production"
+              "devServerTarget": "kiskeya:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "kiskeya-ng"
+    }
+  },
+  "defaultProject": "kiskeya"
 }
