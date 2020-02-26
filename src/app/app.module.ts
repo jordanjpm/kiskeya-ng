@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 
 // modules
 import { MaterialModule } from './material-module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MaterialModule } from './material-module';
     NavbarComponent,
     PageNotFoundComponent,
     HomeComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
