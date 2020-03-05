@@ -1,4 +1,36 @@
+.content, body {
+    background-color: #fff;
+}
+
+.nf-container {
+    align-items: center;
+    padding: 32px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.l-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nf-response {
+    margin: 32px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.nf-response h1 {
+    font-size: 48px;
+    font-size: 4.8rem;
+    color: #1976d2;
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
 p {
-    text-align: center;
-    padding-top: 1em;
+    margin: 14px 0 0;
 }
