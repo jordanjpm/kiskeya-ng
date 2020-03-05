@@ -12,8 +12,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 // modules
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material-module';
-import { HomeModule } from './home/home.module';
-import { EndModule } from './end/end.module';
 
 @NgModule({
   declarations: [
@@ -26,8 +24,6 @@ import { EndModule } from './end/end.module';
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HomeModule,
-    EndModule,
     AppRoutingModule,
   ],
   providers: [],

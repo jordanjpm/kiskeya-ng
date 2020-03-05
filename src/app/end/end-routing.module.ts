@@ -6,7 +6,7 @@ import { EndComponent } from './end.component';
 import { EndLandingComponent} from './end-landing/end-landing.component';
 
 const routes: Routes = [
-  { path: 'end', component: EndComponent ,
+  { path: '', component: EndComponent ,
     children: [
     {
       path: '',
