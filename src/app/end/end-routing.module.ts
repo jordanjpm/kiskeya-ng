@@ -9,16 +9,13 @@ const routes: Routes = [
   { path: '', component: EndComponent ,
     children: [
     {
-      path: '',
-      component: EndLandingComponent,
+      path: '', component: EndLandingComponent,
       // children: [
       //   {
-      //     path: ':id',
-      //     component: EndDetailComponent
+      //     path: ':id', component: EndDetailComponent
       //   },
       //   {
-      //     path: '',
-      //     component: EndSummaryComponent
+      //     path: '', component: EndSummaryComponent
       //   }
       // ]
     }
