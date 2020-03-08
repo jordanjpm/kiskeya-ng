@@ -12,14 +12,14 @@ const routes: Routes = [
     path: '', component: HomeComponent,
     children: [
       {
+        path: '', component: HomeLandingComponent
+      },
+      {
         path: 'summary', component: HomeSummaryComponent
       },
       {
         path: 'detail/:id', component: HomeDetailComponent
-      },     
-      {
-        path: '', component: HomeLandingComponent
-      },
+      }
     ]
   }
 ];
