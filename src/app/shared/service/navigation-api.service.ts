@@ -10,7 +10,7 @@ export class NavigationApiService {
 
   constructor(private http: HttpClient) { }
 
-  getNavigationResponse(url: string): Observable<APIResponse> {
+  getAPIResponse(url: string): Observable<APIResponse> {
     return this.http.get<APIResponse>(url);
   }
 

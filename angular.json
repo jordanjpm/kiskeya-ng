@@ -6,7 +6,7 @@
     "kiskeya": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
+        "@ngrx/schematics:container": {
           "style": "scss"
         }
       },
@@ -129,5 +129,8 @@
       }
     }
   },
-  "defaultProject": "kiskeya"
+  "defaultProject": "kiskeya",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

@@ -1,7 +1,7 @@
 {
     "data": {
         "apis": {
-            "homeAPI": "HomeAPIUrl"
+            "contentAPI": "/demo/api/home/content.json"
         }
     }
 }

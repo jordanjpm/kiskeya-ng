@@ -3,7 +3,7 @@ import { NavigationApiService } from '../shared/service/navigation-api.service';
 import { NavigationData } from '../shared/model/NavigationData';
 
 // constants
-const navigationUrl: string = "/api/home/navigation";
+const navigationUrl: string = "/demo/api/home/navigation.json";
 
 @Component({
   selector: 'app-home',
@@ -17,9 +17,8 @@ export class HomeComponent implements OnInit {
   constructor(private navAPI: NavigationApiService) { }
 
   ngOnInit() {
-    this.navAPI.getNavigationResponse(navigationUrl).subscribe(response => {
+    this.navAPI.getAPIResponse(navigationUrl).subscribe(response => {
       this.navigationData = response.data;
-      console.log(this.navigationData);
     });
   }
 
